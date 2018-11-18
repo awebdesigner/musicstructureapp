@@ -27,18 +27,17 @@ public class Songs extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
 
-        //String songs[] = {"Uganda National Anthem", "You are Great", "Your love amazing", "Sabisanira", "Gypsy", "Amazing Grace"};
-
         View view = inflater.inflate(R.layout.songs,container,false);
-
         ListView songsView = (ListView)view.findViewById(R.id.songs_list_view );
 
-        ArrayList<Item> Itemsongs = new ArrayList<Item>();
-        Itemsongs.add(new Item("Uganda National Anthem","G.William K","Unknown Album"));
-        Itemsongs.add(new Item("Uganda National Anthem","G.William K","Unknown Album"));
+        ArrayList<Music> songs = new ArrayList<Music>();
+        songs.add(new Music("Uganda National Anthem","G.William K","Unknown Album",android.R.drawable.ic_media_play));
+        songs.add(new Music("Amazing Grace","Hillsong","Amazing Grace",android.R.drawable.ic_media_play));
+        songs.add(new Music("Gypsy","Shakira","Unknown Album",android.R.drawable.ic_media_play));
+        songs.add(new Music("You're Great","Steve Crown","Unknown Album",android.R.drawable.ic_media_play));
+        songs.add(new Music("Sabisanira","Twina Herbert","Praise",android.R.drawable.ic_media_play));
 
-
-        customArrayAdapter songAdapter = new customArrayAdapter(getActivity(),Itemsongs);
+        customArrayAdapter songAdapter = new customArrayAdapter(getActivity(),songs);
         songsView.setAdapter(songAdapter);
 
         return view;

@@ -8,4 +8,6 @@
     <string name="action_albums">Albums</string>
     <string name="action_artists">Artists</string>
     <string name="action_playlists">Playlists</string>
+    <string name="sub_title_album">Album</string>
+    <string name="sub_title_artist">Artist</string>
 </resources>

@@ -5,8 +5,7 @@
     android:layout_height="wrap_content"
     android:background="@color/colorPrimaryDark"
     android:gravity="bottom"
-    android:orientation="vertical"
-    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+    android:orientation="vertical">
 
     <TextView
         android:layout_width="match_parent"
@@ -15,6 +14,6 @@
         android:paddingVertical="@dimen/nav_header_vertical_spacing"
         android:text="@string/nav_header_title"
         android:textColor="@color/colorAccent"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+         />
 
 </LinearLayout>
